@@ -1,27 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Farmacia Paco</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <!--ENLACES A CSS-->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
-</head>
-<body>
+    <!--ENLACES INTERNOS-->
+    <link rel="contactar" href="contactar.html" />
+    <link rel="productos" href="productos.html" />
+
+    <!-- Metadatos Web -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- HTML Meta Tags -->
+    <title>Vecinos</title>
+    <meta
+      name="description"
+      content="Vecinos es una app para sociabiliar con la gente más próxima a tu hogar"
+    />
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Vecinos" />
+    <meta
+      itemprop="description"
+      content="Vecinos es una app para sociabiliar con la gente más próxima a tu hogar"
+    />
+    <meta itemprop="image" content="http://" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="http://" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Vecinos" />
+    <meta
+      property="og:description"
+      content="Vecinos es una app para sociabiliar con la gente más próxima a tu hogar"
+    />
+    <meta property="og:image" content="http://" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Vecinos" />
+    <meta
+      name="twitter:description"
+      content="Vecinos es una app para sociabiliar con la gente más próxima a tu hogar"
+    />
+    <meta name="twitter:image" content="http://" />
+  </head>
+  <body>
     <!--enlace al diagrama de flujo de figma
     https://www.figma.com/file/EBqlK4rkpXZ31KArZvimsk/Proyecto_Ejemplo_Web_Farmacia?node-id=0%3A1-->
 
     <!--enlace al diseño de figma
     https://www.figma.com/file/g85UNHaHAoDuc6dcAV4rtt/Untitled?node-id=0%3A1-->
 
-    <header></header>
+    <!-- HEADER -->
+    <header>
+      <!-- Enlaces internos -->
+      <nav>
+        <a>inicio</a>
+        <a href="./productos.html">productos</a>
+        <a href="./contactar.html">contactar</a>
+      </nav>
 
-    <main></main>
+      <!-- Logo -->
+      <img width="80px" src="./img/logo.svg" alt="logotipo farmacia paco" />
 
-    <footer></footer>
+      <!-- banner 3 fotos -->
+      <picture>
+        <source
+          srcset="./img/banner1.jpg 1x, ./img/banner12x.jpg 2x"
+          media="(min-width:1200px)"
+        />
+        <!-- imagen con alt -->
+        <img class="banner" src="" alt="banner de la empresa instagram" />
+      </picture>
 
-</body>
+      <picture>
+        <source
+          srcset="./img/banner2.jpg 1x, ./img/banner22x.jpg 2x"
+          media="(min-width:1200px)"
+        />
+        <!-- imagen con alt -->
+        <img class="banner" src="" alt="banner de la empresa instagram" />
+      </picture>
+
+      <picture>
+        <source
+          srcset="./img/banner3.jpg 1x, ./img/banner32x.jpg 2x"
+          media="(min-width:1200px)"
+        />
+        <!-- imagen con alt -->
+        <img class="banner" src="" alt="banner de la empresa instagram" />
+      </picture>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <picture>
+        <source
+          srcset="./img/img_producto01.jpg 1x, ./img/img_producto012x.jpg 2x"
+          media="(min-width:1200px)"
+        />
+        <!-- imagen con alt -->
+        <img class="banner" src="" alt="banner de la empresa instagram" />
+      </picture>
+
+      <picture>
+        <source
+          srcset="./img/img_producto02.jpg 1x, ./img/img_producto022x.jpg 2x"
+          media="(min-width:1200px)"
+        />
+        <!-- imagen con alt -->
+        <img class="banner" src="" alt="banner de la empresa instagram" />
+      </picture>
+
+      <picture>
+        <source
+          srcset="./img/img_producto03.jpg 1x, ./img/img_producto032x.jpg 2x"
+          media="(min-width:1200px)"
+        />
+        <!-- imagen con alt -->
+        <img class="banner" src="" alt="banner de la empresa instagram" />
+      </picture>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <section id="footer">
+        <!-- BEM -->
+        <section class="arriba">
+          <!-- Redes Sociales -->
+          <ul class="arriba__redesSociales">
+            <!-- Logo -->
+
+            <li class="arriba__redesSociales__instagram">
+              <a href="http://www.instagram.com">
+                <img
+                  width="80px"
+                  src="./img/instagram.svg"
+                  alt="twitter farmacia paco"
+              /></a>
+            </li>
+            <li class="arriba__redesSociales__twitter">
+              <a href="http://www.twitter.com">
+                <img
+                  width="80px"
+                  src="./img/twitter.svg"
+                  alt="twitter farmacia paco"
+              /></a>
+            </li>
+            <li class="arriba__redesSociales__facebook">
+              <a href="http://www.facebook.com">
+                <img
+                  width="80px"
+                  src="./img/facebook.svg"
+                  alt="twitter farmacia paco"
+              /></a>
+            </li>
+          </ul>
+        </section>
+        <section class="abajo">
+          <h6 class="abajo__copyright">Copyright 2021 - Farmacia PACO</h6>
+        </section>
+      </section>
+    </footer>
+  </body>
 </html>
